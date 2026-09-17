@@ -1,0 +1,1 @@
+window.MK_CONFIG={SUPABASE_URL:"https://otbsqfbieltizbfhwtbj.supabase.co",SUPABASE_ANON_KEY:"sb_publishable_sanO0ngTWM2zSZ-7f6eukQ_xgE-CxuF",TIMEZONE:"Europe/Berlin",CLOSE_HOUR:20};
