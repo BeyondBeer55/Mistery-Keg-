@@ -1,0 +1,36 @@
+/* Approved Mystery Keg customer layout */
+.customer-screen{width:min(100%,560px);padding:28px 42px 24px;background:linear-gradient(180deg,#0002,#0000 48%,#0005)}
+.customer-header{height:88px;align-items:flex-start;justify-content:space-between}
+.customer-header .logo{width:155px;max-width:none}
+.customer-header .lang{font-size:17px;margin-top:8px}
+.keg-brand{text-align:center;margin:2px 0 25px;line-height:.78;letter-spacing:-.06em;white-space:nowrap}
+.keg-brand span:first-child{display:block;font-size:clamp(62px,11vw,88px);color:#fff}
+.keg-brand strong{display:inline-block;font-size:clamp(78px,14vw,108px);color:#08b7d3;vertical-align:middle}
+.keg-mark{display:inline-block!important;width:clamp(54px,8vw,68px);height:clamp(54px,8vw,68px);margin-left:3px;vertical-align:middle!important}
+.keg-mark svg{width:100%;height:100%;display:block;filter:drop-shadow(0 3px 7px #0008)}
+.keg-mark .burst{fill:#08b7d3}.keg-mark .glass{fill:#fff}.keg-mark .glass-line{fill:none;stroke:#08b7d3;stroke-width:5;stroke-linecap:round}
+.lead{font-size:20px;line-height:1.22;font-weight:800;margin:0 0 27px;text-shadow:0 2px 10px #000}
+.field{margin-bottom:16px}label{font-size:19px;margin-bottom:8px}
+.input-wrap input{height:62px;border-radius:16px;font-size:18px;padding-left:61px}
+.primary{height:64px;font-size:21px;margin-top:3px}
+.steps{margin:31px 0 27px;gap:20px}.steps span{font-size:12px}.step-icon{font-size:48px}.qr-icon{font-size:54px}.trophy-icon{font-size:52px}
+.draw-line{font-size:20px;gap:11px}
+.success-page .customer-header{height:88px}.success-page .keg-brand{margin:2px 0 18px}.success-page .success-mark{margin:20px auto 23px}
+.success-title{font-size:52px}.success-copy{font-size:20px}.success-divider{margin:32px auto 16px}.luck{font-size:25px}.draw-copy{font-size:18px;margin-bottom:32px}.secondary{width:88%;height:58px;font-size:16px}.good-beer{font-size:22px}
+@media(max-width:600px){
+ .customer-screen{width:100%;padding:27px 28px 22px}
+ .customer-screen:after{inset:7px 6px;border-radius:31px}
+ .customer-header{height:82px}
+ .customer-header .logo{width:150px}
+ .customer-header .lang{font-size:16px;margin-top:8px}
+ .keg-brand{margin:0 0 24px}
+ .keg-brand span:first-child{font-size:clamp(59px,16vw,77px)}
+ .keg-brand strong{font-size:clamp(74px,20vw,97px)}
+ .keg-mark{width:56px;height:56px}
+ .lead{font-size:17px;margin-bottom:24px}
+ label{font-size:18px}.input-wrap input{height:62px;font-size:17px;border-radius:15px}
+ .primary{height:62px;font-size:20px}
+ .steps{margin-top:29px;gap:12px}.step-icon{font-size:43px}.qr-icon{font-size:50px}.trophy-icon{font-size:46px}.steps span{font-size:10px}
+ .draw-line{font-size:17px;gap:8px}
+ .success-page .customer-header{height:82px}.success-page .success-mark{width:88px;height:88px;font-size:58px;margin-top:16px}.success-title{font-size:43px}.success-copy{font-size:18px}.success-divider{width:78%;margin-top:29px}.luck{font-size:23px}.draw-copy{font-size:16px;margin-bottom:28px}.secondary{width:90%;height:55px;font-size:15px}.good-beer{right:8%;bottom:18px;font-size:20px}
+}
