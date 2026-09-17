@@ -1,7 +1,7 @@
 const C=window.MK_CONFIG;
 const sb=window.supabase.createClient(C.SUPABASE_URL,C.SUPABASE_ANON_KEY);
 const app=document.getElementById("app");
-const admin=location.search.toLowerCase().includes("admin");
+const admin=location.search.toLowerCase().includes("admin")||location.pathname.toLowerCase().endsWith("/admin.html");
 let lang=localStorage.getItem("mk-lang")||"de";
 const T={de:{lead:`Errate den Bierstil und gewinne<br>eins von zwei brandneu releasten<br>Premium-Bieren!`,name:"Dein Name",style:"Bierstil",namePh:"Name eingeben …",stylePh:"z. B. IPA, Stout, Lager …",join:"JETZT TEILNEHMEN!",step1:"1. NAME &<br>BIERSTIL EINGEBEN",step2:"2. MIT ETWAS GLÜCK<br>GEWINNEN!",draw:"Verlosung um 20 Uhr",saved:"VIELEN DANK!",savedCopy:"Deine Teilnahme wurde<br>erfolgreich gespeichert.",luck:"Viel Glück!",drawCopy:"Die Verlosung findet um <strong>20 Uhr</strong> statt.",again:"NOCHMAL TEILNEHMEN",closed:"TEILNAHME GESCHLOSSEN",closedCopy:"Die Verlosung hat bereits um 20 Uhr stattgefunden.<br>Viel Glück beim nächsten Mystery Keg!"},en:{lead:`Guess the beer style and win<br>one of two brand-new<br>premium beers!`,name:"Your Name",style:"Beer Style",namePh:"Enter your name …",stylePh:"e.g. IPA, Stout, Lager …",join:"ENTER NOW!",step1:"1. ENTER NAME &<br>BEER STYLE",step2:"2. WITH A LITTLE LUCK<br>YOU COULD WIN!",draw:"Draw at 8 PM",saved:"THANK YOU!",savedCopy:"Your entry was<br>successfully saved.",luck:"Good luck!",drawCopy:"The draw takes place at <strong>8 PM</strong>.",again:"ENTER AGAIN",closed:"ENTRY CLOSED",closedCopy:"The draw already took place at 8 PM.<br>Good luck at the next Mystery Keg!"}};
 const eventDate=()=>new Intl.DateTimeFormat("en-CA",{timeZone:C.TIMEZONE,year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
