@@ -1,12 +1,12 @@
-/* Mystery Keg — Kundenansicht: approved mobile layout */
+/* Mystery Keg — Kundenansicht / QR landing page */
 .customer{min-height:100svh;display:flex;justify-content:center;align-items:stretch;background:#000!important}
-.customer-screen{position:relative;width:min(100vw,430px);min-height:100svh;height:100svh;padding:30px 8% 24px;overflow:hidden;background-color:#101112!important;background-image:linear-gradient(180deg,#0005 0%,#0001 42%,#0008 100%),url("MISTERY%20KEG%20(10)_page-0001.jpg")!important;background-size:100% 100%!important;background-position:center!important;background-repeat:no-repeat!important}
-.customer-screen:before{content:"";position:absolute;inset:0;background-image:linear-gradient(180deg,#0002,#0000 45%,#0005),url("MISTERY%20KEG%20(10)_page-0001.jpg");background-size:100% 100%;background-position:center;background-repeat:no-repeat;z-index:0;pointer-events:none}
+.customer-screen{position:relative;width:min(100vw,430px);min-height:100svh;height:100svh;padding:30px 8% 24px;overflow:hidden;background-color:#101112!important;background-image:linear-gradient(180deg,#0004 0%,#0000 45%,#0006 100%),url("ChatGPT%20Image%2017.%20Sept.%202026%2C%2014_09_20.png")!important;background-size:100% 100%!important;background-position:center!important;background-repeat:no-repeat!important}
+.customer-screen:before{content:none!important}
 .customer-screen:after{content:"";position:absolute;inset:7px 6px;border:2px solid #101a1d;border-radius:31px;box-shadow:inset 0 0 0 2px #ffffff18,0 0 0 1px #000;pointer-events:none;z-index:20}
 .customer-screen>*{position:relative;z-index:5}
-.customer-header{height:88px;display:flex;align-items:flex-start;justify-content:space-between}
+.customer-header{height:88px;display:flex;align-items:flex-start;justify-content:space-between;position:relative;z-index:30}
 .customer-header .logo{width:165px;max-width:52%;height:auto;filter:drop-shadow(0 4px 8px #0009)}
-.customer-header .lang{font-size:17px;margin-top:9px;white-space:nowrap;font-weight:800;letter-spacing:.02em;z-index:30}
+.customer-header .lang{font-size:17px;margin-top:9px;white-space:nowrap;font-weight:800;letter-spacing:.02em;z-index:40;position:relative}
 .customer-header .lang button{border:0;background:transparent;color:#fff;font:inherit;font-weight:800;padding:0 2px;cursor:pointer;pointer-events:auto;text-shadow:0 2px 7px #000;touch-action:manipulation}
 .customer-header .lang button.active{text-decoration:underline;text-underline-offset:4px}
 .keg-brand{position:relative;text-align:left;margin:3px 0 25px;line-height:.76;letter-spacing:-.06em;white-space:nowrap}
